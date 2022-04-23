@@ -1,6 +1,12 @@
 const sorteado = document.getElementById("sorteado");
 const arquivo = document.getElementById("arqCsv")
-let lista2 = []
+let lista2 = [];
+let input = document.getElementById('files');
+let fileName = document.getElementById('file-name');
+
+input.addEventListener('change', function(){
+  fileName.textContent = "NOMES ENVIADOS COM SUCESSO";
+});
 
 function lerArquivoTxt(evt){
     var texto = "";
@@ -15,7 +21,7 @@ function lerArquivoTxt(evt){
             }
             const res = texto;
             console.log(texto)
-            let result = res.split(",")
+            let result = res.split("\r")
             console.log(result)
             lista2 = result;
             
@@ -26,7 +32,7 @@ function lerArquivoTxt(evt){
 document.getElementById('files').addEventListener('change', lerArquivoTxt, false);
 
 function sortear(){
-    numero = Math.round(Math.random()*2)
+    numero = Math.round(Math.random()*(lista2.length - 1))
     sorte = lista2[numero]
     sorteado.innerHTML = sorte
     console.log("Funcionando corretamente")

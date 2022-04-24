@@ -149,3 +149,12 @@ span {
   margin-top: 20px;
 }
 
+h1 #pod {
+  color: yellow;
+  text-shadow: 0.1em 0.1em 0.1em rgba(89, 0, 253, 0.411);
+}
+
+#vir {
+  color: orange;
+  text-shadow: 0.1em 0.1em 0.1em rgba(89, 0, 253, 0.411);
+}

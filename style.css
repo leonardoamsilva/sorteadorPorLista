@@ -20,7 +20,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: rgb(68, 6, 68);
     z-index: -1;
   }
   
@@ -113,7 +113,7 @@
   
   footer .buttons {
     height: 56px;
-    background-color: #04D361;
+    background-color: rgb(221, 221, 3);
     border-radius: 8px;
     border: none;
     font-family: 'Archivo';
@@ -126,7 +126,7 @@
   }
   
   footer .buttons:hover{
-    background-color: #0aaf55;
+    background-color: rgb(173, 173, 68);
   }
 
   input[type="file"] {
@@ -135,7 +135,7 @@
 label {
     padding: 20px 10px;
     width: 200px;
-    background-color: #333;
+    background-color: rgb(68, 6, 68);
     color: #FFF;
     text-transform: uppercase;
     text-align: center;
@@ -143,6 +143,10 @@ label {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 8px;
+}
+
+label:hover {
+  background-color: rgb(173, 13, 173);
 }
 
 span {

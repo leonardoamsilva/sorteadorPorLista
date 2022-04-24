@@ -31,11 +31,15 @@ function lerArquivoTxt(evt){
 }
 document.getElementById('files').addEventListener('change', lerArquivoTxt, false);
 
+
 function sortear(){
     numero = Math.round(Math.random()*(lista2.length - 1))
     sorte = lista2[numero]
-    sorteado.innerHTML = sorte
+        setTimeout(() => {
+            sorteado.innerHTML = sorte
+        }, 1000)
     console.log("Funcionando corretamente")
     console.log(sorte)
     console.log(lista2)
 }
+

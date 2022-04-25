@@ -20,9 +20,7 @@ function lerArquivoTxt(evt){
                 texto += linhas[x];
             }
             const res = texto;
-            console.log(texto)
             let result = res.split("\r")
-            console.log(result)
             lista2 = result;
             
         };
@@ -39,7 +37,5 @@ function sortear(){
             sorteado.innerHTML = sorte
         }, 1000)
     console.log("Funcionando corretamente")
-    console.log(sorte)
-    console.log(lista2)
 }
 
